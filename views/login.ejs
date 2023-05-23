@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+
+
+<header class="header" id="header">
+    <div class="container-header">
+        <div class="left-header">
+            <h2>Vedere Praga Tours</h2>
+        </div>
+        <div class="middle-header">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="">Tours</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contatti</a></li>
+            </ul>
+        </div>
+        <div class="right-header">
+            <ul>
+                <li><a href="/register" class="RegistrationButton">Registrati</a></li>
+                <li class="LogInButton"><a href="/login" style="color: #000; font-weight: 400">Il tuo carrello</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<main class="main-login">
+    <div class="registration-holder">
+        <div class="image-holder">
+            <video src="../videos/prague-login.mov" loop muted autoplay></video>
+        </div>
+
+
+        <div class="registration-block">
+
+
+            <div class="text-content">
+                <h2>Welcome Back!</h2>
+            </div>
+            <div class="text-content second">
+                <a href="/register">New to this site? Sign up</a>
+            </div>
+
+
+            <div class="register-content">
+
+                <form action="/login" class="input-holder" method="POST">
+                    <% if (messages.error) { %>
+                        <div class="alert-error">
+                            <span><%= messages.error%></span>
+                        </div>
+                    <% } %>
+                    <input name="email" type="email" placeholder="Email">
+                    <input name="password" type="password" placeholder="Password" >
+
+                    <button class="loginButton" type="submit">Log in</button>
+
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+</main>
+
+
+<footer id="footer" class="footer">
+    <div class="footer-top-grid-holder">
+        <div class="column">
+            <ul>
+                <li><p>Vedere Praga Tours</p></li>
+                <li><span>Arricchisci la tua vacanza <br> escursioni in italiano in <br> tutta Praga</span></li>
+            </ul>
+
+        </div>
+        <div class="column">
+            <ul>
+                <li><p>Contatti</p></li>
+                <li><a href="">Telegram</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">Phone number</a></li>
+                <li><a href="">E-mail</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><p>Navigation</p></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Tours</a></li>
+                <li><a href="">Add to card</a></li>
+                <li><a href="">Registrati</a></li>
+                <li><a href="">Il tuo carrello</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><p>Tours</p></li>
+                <li><a href="">Tour del castello offerta libera</a></li>
+                <li><a href="">Tour con show della magia e leggende con il grande illusionista Simuan</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom-grid-holder">
+        <span class="copyright-text">Copyright © 2023 Vedere Praga Tour. Tutti i diritti riservati.</span>
+    </div>
+</footer>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

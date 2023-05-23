@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vedere Praga Tours</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!--HEADER-->
+<header class="header" id="header">
+    <div class="container-header">
+        <div class="left-header">
+            <h2>Vedere Praga Tours</h2>
+        </div>
+        <div class="middle-header">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="">Tours</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contatti</a></li>
+            </ul>
+        </div>
+        <div class="right-header">
+            <ul>
+                <% if (isAuthenticated) { %>
+                    <li class="User-page"><a href="" style="color: #000; font-weight: 400">Hello, <%= name %>!</a></li>
+                    <form action="/logout?_method=DELETE" method="POST" class="form-logout">
+                        <li class="LogOut"><button class="logOutButton" type="submit">Log out</button></li>
+                    </form>
+                <% } else { %>
+                    <li class="RegistrationButton"><a href="/register">Registrati</a></li>
+                    <li class="LogInButton"><a href="/login" style="color: #000; font-weight: 400">Il tuo carrello</a></li>
+                <% } %>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--HEADER-->
+
+
+<!--MAIN-->
+<main id="main" class="main">
+    <div class="top-image-container">
+        <div class="text-holder-main-top">
+            <p class="title">Vedere Praga Tours</p>
+            <p class="tagline">Arricchisci la tua vacanza escursioni <br> in italiano in tutta Praga</p>
+        </div>
+        <div class="text-holder-main-bottom">
+            <a href=""><img src="../icons/instagram.png" alt="instagram"></a>
+            <a href=""><img src="../icons/youtube.png" alt="instagram"></a>
+            <a href=""><img src="../icons/telegram.png" alt="instagram"></a>
+        </div>
+    </div>
+
+    <div class="main-holder-bottom">
+        <div class="main-holder-box">
+            <div class="titles">
+                <h2 class="tour-h2">Scegli Il Tuo <span>Tour</span> Ideale</h2>
+                <h3 class="tour-h3">Visuallizza e prenota in pochissimi click</h3>
+            </div>
+            <div class="links-main">
+                <a class="right" href="">More</a>
+                <a href="">Buy Tour</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="holder-main">
+        <div class="tour-container">
+            <div class="tour-box-left-top">
+                <div class="text-holder">
+                    <h4>Tour del castello offerta libera</h4>
+                    <h5>Dal re folle Rodolfo II a Maria Teresa d'Austria, per secoli re regine e imperatori hanno scritto la storia e le leggende che ruotano intorno al castello più grande al mondo!</h5>
+                    <div class="button-holder">
+                        <div class="content">
+                            <button class="diPiu">More...</button>
+                            <button class="Libro"><a href="">+ Add to card</a></button>
+                        </div>
+                        <div class="content">
+                            <span>Durata: 3 ore. Prezzo: free tour.</span>
+                            <span class="guide">Guide: Davide Aiolfi.</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="tour-box-right-top">
+                <div class="text-holder">
+                    <h4>Tour di spettacoli di magia e leggenda</h4>
+                    <h5>In questo percorso accompagnati dal grande illusionista Simuan, scopriremo dove vivevano gli alchimisti del re folle e insieme a Simuan cercheremo di tramutare i metalli grezzi in oro!</h5>
+                    <div class="button-holder">
+                        <div class="content">
+                            <button class="diPiu">More...</button>
+                            <button class="Libro"><a href="">+ Add to card</a></button>
+                        </div>
+                        <div class="content">
+                            <span>Durata: 2 ore. Prezzo: 25€ adulto (Fino ai 18 anni gratuito).</span>
+                            <span class="guide">Guide: Davide Aiolfi.</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-holder-top">
+        <div class="main-holder-box top">
+            <div class="top-columns">
+                <h4>10+<p>Years work</p></h4>
+            </div>
+            <div class="top-columns">
+                <h4>400+<p>Clients</p></h4>
+            </div>
+            <div class="top-columns">
+                <h4>2M+<p>Kilometers walked</p></h4>
+            </div>
+            <div class="top-columns">
+                <h4>100.000+<p>Words was said</p></h4>
+            </div>
+            <div class="top-columns">
+                <h4>12.000+<p>Liters of beer was drunk</p></h4>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="reviews-container">
+        <div class="text-holder-reviews">
+            <div class="reviews-text">
+                <h2>Reviews</h2>
+            </div>
+            <div class="reviews-text">
+                <a href="https://www.tripadvisor.it/Attraction_Review-g274707-d25184106-Reviews-Vederepragatour-Prague_Bohemia.html" target="_blank">See more reviews on Tripadvisor</a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="reviews-content-box">
+        <div class="left-reviews">
+            <div class="content-box">
+            </div>
+        </div>
+        <div class="slideshow-container">
+            <div class="images">
+                <input type="radio" name="slide" id="img1">
+                <input type="radio" name="slide" id="img2">
+                <input type="radio" name="slide" id="img3">
+                <input type="radio" name="slide" id="img4">
+
+                <img src="../slider-images/caption.jpg" alt="img1" class="m1" style="filter: brightness(0.9)">
+                <img src="../slider-images/photo_2023-04-23_15-14-56.jpg" alt="img2" class="m2" style="filter: brightness(0.9)">
+                <img src="../slider-images/photo_2023-04-23_15-14-57.jpg" alt="img3" class="m3" style="filter: brightness(0.9)">
+                <img src="../slider-images/photo_2023-04-23_15-14-56%20(2).jpg" alt="img4" class="m4" style="filter: brightness(0.9)">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="buttoms">
+        <div class="dots-container">
+            <div class="dots">
+
+            </div>
+        </div>
+        <div class="dots-container">
+            <div class="dots">
+                <label for="img1"></label>
+                <label for="img2"></label>
+                <label for="img3"></label>
+                <label for="img4"></label>
+            </div>
+        </div>
+    </div>
+    <div class="b1">
+        <span>Un ringraziamento speciale a tutti i nostri turisti che in questi anni ci hanno spronato a realizzare il nostro sogno!<br>Un progetto ambizioso che ha unito l'esperienza delle guide migliori di Praga a portare una ventata fresca in città.<br>Storie e leggende vi trasporteranno in un viaggio nel tempo con tour unici, dove vi porteremo a vedere le gemme preziose nascoste della città! Siete pronti?</span>
+    </div>
+</main>
+
+<!--MAIN-->
+
+
+<!--FOOTER-->
+<footer id="footer" class="footer">
+    <div class="footer-top-grid-holder">
+        <div class="column">
+            <ul>
+                <li><p>Vedere Praga Tours</p></li>
+                <li><span>Arricchisci la tua vacanza <br> escursioni in italiano in <br> tutta Praga</span></li>
+            </ul>
+
+        </div>
+        <div class="column">
+            <ul>
+                <li><p>Contatti</p></li>
+                <li><a href="">Telegram</a></li>
+                <li><a href="">Instagram</a></li>
+                <li><a href="">Youtube</a></li>
+                <li><a href="">Phone number</a></li>
+                <li><a href="">E-mail</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><p>Navigation</p></li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Tours</a></li>
+                <li><a href="">Add to card</a></li>
+                <li><a href="">Registrati</a></li>
+                <li><a href="">Il tuo carrello</a></li>
+            </ul>
+        </div>
+        <div class="column">
+            <ul>
+                <li><p>Tours</p></li>
+                <li><a href="">Tour del castello offerta libera</a></li>
+                <li><a href="">Tour con show della magia e leggende con il grande illusionista Simuan</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom-grid-holder">
+        <span class="copyright-text">Copyright © 2023 Vedere Praga Tour. Tutti i diritti riservati.</span>
+    </div>
+</footer>
+<!--FOOTER-->
+<script src="../js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+</body>
+</html>
